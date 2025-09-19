@@ -44,7 +44,7 @@ const links = [
 
 const Navbar = () => {
     return (
-        <nav className="flex h-fit px-3 justify-between py-3 items-center">
+        <nav className="flex h-fit px-10 justify-between py-3 items-center">
             <ul className="flex gap-8">
                 {links
                     .map(({ text, path }) => (
@@ -56,7 +56,7 @@ const Navbar = () => {
             </ul>
             <Logo size={1} />
 
-            <ul className="flex gap-8">
+            <ul className="flex gap-8 cursor-pointer">
                 {links
                     .map(({ text, path }) => (
                         <li>
