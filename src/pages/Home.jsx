@@ -37,7 +37,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-white pt-20">
+    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden pt-20 bg-blue-100">
       {/* Dynamic Watermark text */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
@@ -99,9 +99,8 @@ const Home = () => {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition ${
-              index === current ? "bg-blue-600 scale-110" : "bg-gray-300"
-            }`}
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition ${index === current ? "bg-blue-600 scale-110" : "bg-gray-300"
+              }`}
           />
         ))}
       </div>
