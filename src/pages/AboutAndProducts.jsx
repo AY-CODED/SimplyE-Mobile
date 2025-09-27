@@ -4,22 +4,22 @@ const AboutAndProducts = () => {
         {
             title: "Electric Bikes",
             desc: "Commuter & cargo variants for individuals and last-mile couriers.",
-            img: "/bike.png",
+            img: "/BIke.jpeg",
         },
         {
             title: "Electric Tricycles",
             desc: "Passenger & cargo models for estates and local routes.",
-            img: "/tricycle.png",
+            img: "/Tricycle.jpeg",
         },
         {
             title: "Electric Cars",
             desc: "Efficient electric cars for logistics and daily use.",
-            img: "/car.png",
+            img: "/BYD_HAN.jpg",
         },
         {
             title: "Fleet & After-Sales",
             desc: "Procurement, financing, maintenance, spare parts & technician training.",
-            img: "/fleet.png",
+            img: "/Solutions.jpeg",
         },
     ];
 
@@ -68,17 +68,27 @@ const AboutAndProducts = () => {
                         {products.map((item, index) => (
                             <div
                                 key={index}
-                                className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
+                                // Increased padding from 'p-6' to 'p-8'
+                                className="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
                             >
                                 <img
+                                    // Increased image size from 'w-20 h-20' to 'w-24 h-24'
                                     src={item.img}
                                     alt={item.title}
-                                    className="w-20 h-20 object-contain mx-auto mb-6"
+                                    className="w-24 h-24 object-contain mx-auto mb-6"
                                 />
-                                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                <h3
+                                    // Increased title size from 'text-xl' to 'text-2xl'
+                                    className="text-2xl font-semibold text-gray-800 mb-3"
+                                >
                                     {item.title}
                                 </h3>
-                                <p className="text-gray-600 text-sm">{item.desc}</p>
+                                <p
+                                    // Increased description size from 'text-sm' to 'text-base'
+                                    className="text-gray-600 text-base"
+                                >
+                                    {item.desc}
+                                </p>
                             </div>
                         ))}
                     </div>

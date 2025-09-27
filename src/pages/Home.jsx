@@ -19,7 +19,7 @@ const cars = [
     id: 3,
     title: "Future of Mobility: Tricycles",
     desc: "Safe, spacious, and sustainable. Check out our latest electric tricycles.",
-    img: "/Tricycle.png",
+    img: "/Tricycle1.png",
     watermark: "Tricycles",
   },
 ];
