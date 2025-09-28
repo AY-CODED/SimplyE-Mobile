@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-300">
+        <footer className="relative bg-blue-500/20 backdrop-blur-xl border-t border-blue-200/20 shadow-lg text-blue-700">
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-12">
-
                 {/* Brand / About */}
                 <div>
                     <Logo size={1.2} />
-                    <p className="mt-4 text-sm text-gray-400 leading-relaxed">
+                    <p className="mt-4 text-sm text-blue-700 leading-relaxed">
                         Simply E-Mobiles provides eco-friendly electric bikes, tricycles,
                         and cars tailored for individuals, businesses, and fleet solutions.
                     </p>
@@ -18,34 +17,34 @@ const Footer = () => {
 
                 {/* Quick Links */}
                 <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <h3 className="text-lg font-semibold text-blue-700 mb-4">Quick Links</h3>
                     <ul className="space-y-2 text-sm">
-                        <li><Link to="/" className="hover:text-white">Home</Link></li>
-                        <li><Link to="/#about" className="hover:text-white">About Us</Link></li>
-                        <li><Link to="/products/bikes" className="hover:text-white">Electric Bikes</Link></li>
-                        <li><Link to="/products/tricycles" className="hover:text-white">Electric Tricycles</Link></li>
-                        <li><Link to="/products/cars" className="hover:text-white">Electric Cars</Link></li>
-                        <li><Link to="/contact" className="hover:text-white">Contact Us</Link></li>
+                        <li><Link to="/" className="hover:text-blue-950">Home</Link></li>
+                        <li><Link to="/#about" className="hover:text-blue-950">About Us</Link></li>
+                        <li><Link to="/products/bikes" className="hover:text-blue-950">Electric Bikes</Link></li>
+                        <li><Link to="/products/tricycles" className="hover:text-blue-950">Electric Tricycles</Link></li>
+                        <li><Link to="/products/cars" className="hover:text-blue-950">Electric Cars</Link></li>
+                        <li><Link to="/contact" className="hover:text-blue-950">Contact Us</Link></li>
                     </ul>
                 </div>
 
                 {/* Contact Info */}
                 <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <h3 className="text-lg font-semibold text-blue-700 mb-4">Contact</h3>
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-start gap-2">
                             <Phone size={16} className="mt-0.5" />
                             <span className="space-y-1">
-                                <a href="tel:09063671109" className="hover:text-white block">0906 367 1109</a>
-                                <a href="tel:07047907575" className="hover:text-white block">0704 790 7575</a>
-                                <a href="tel:08063626413" className="hover:text-white block">0806 362 6413</a>
+                                <a href="tel:09063671109" className="hover:text-blue-950 block">0906 367 1109</a>
+                                <a href="tel:07047907575" className="hover:text-blue-950 block">0704 790 7575</a>
+                                <a href="tel:08063626413" className="hover:text-blue-950 block">0806 362 6413</a>
                             </span>
                         </li>
                         <li className="flex items-start gap-2">
                             <Mail size={16} className="mt-0.5" />
                             <a
                                 href="mailto:simplyemobilesng@gmail.com"
-                                className="hover:text-white"
+                                className="hover:text-blue-950"
                             >
                                 simplyemobilesng@gmail.com
                             </a>
@@ -62,7 +61,7 @@ const Footer = () => {
 
                 {/* Extra Links / Social */}
                 <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
+                    <h3 className="text-lg font-semibold text-blue-700 mb-4">Connect</h3>
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-center gap-2">
                             <LinkIcon size={16} />
@@ -70,7 +69,7 @@ const Footer = () => {
                                 href="https://simplysolar.ng/simply-e-mobile"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-white"
+                                className="hover:text-blue-950"
                             >
                                 simplysolar.ng/simply-e-mobile
                             </a>
@@ -84,11 +83,12 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-500">
+            <div className="border-t border-blue-200/20 py-6 text-center text-sm text-blue-700">
                 © {new Date().getFullYear()} Simply E-Mobiles. All rights reserved.
-                <span className="ml-1">By <span className="text-white font-semibold">AY||TECH!</span></span>
+                <span className="ml-1">
+                    By <span className="text-blue-700 font-semibold">AY||TECH!</span>
+                </span>
             </div>
-
         </footer>
     );
 };
