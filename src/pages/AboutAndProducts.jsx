@@ -1,26 +1,33 @@
+import { Link } from "react-router-dom";
+
 // About + Products Sections
 const AboutAndProducts = () => {
     const products = [
         {
+            title: "Electric Cars",
+            desc: "Efficient electric cars for logistics and daily use.",
+            img: "/BYD_HAN.jpg",
+            path: "/products/electric-cars", // ✅
+        },
+        {
             title: "Electric Bikes",
             desc: "Commuter & cargo variants for individuals and last-mile couriers.",
             img: "/BIke.jpeg",
+            path: "/products/electric-bikes", // ✅ URL path
         },
         {
             title: "Electric Tricycles",
             desc: "Passenger & cargo models for estates and local routes.",
             img: "/Tricycle.jpeg",
-        },
-        {
-            title: "Electric Cars",
-            desc: "Efficient electric cars for logistics and daily use.",
-            img: "/BYD_HAN.jpg",
+            path: "/products/electric-tricycles", // ✅
         },
         {
             title: "Fleet & After-Sales",
             desc: "Procurement, financing, maintenance, spare parts & technician training.",
             img: "/Solutions.jpeg",
+            path: "/contact", // ✅ now routes to Contact.jsx
         },
+
     ];
 
     return (
@@ -34,15 +41,15 @@ const AboutAndProducts = () => {
                             About <span className="text-blue-600">Simply E-Mobiles</span>
                         </h2>
                         <p className="text-gray-600 leading-relaxed mb-4">
-                            We are a Nigerian electric mobility company delivering affordable, reliable,
-                            and locally-appropriate transport solutions. From electric bikes and tricycles
-                            to cars and fleet packages, we’re accelerating the transition to sustainable
-                            mobility in Africa.
+                            We are a Nigerian electric mobility company delivering affordable,
+                            reliable, and locally-appropriate transport solutions. From electric
+                            bikes and tricycles to cars and fleet packages, we’re accelerating
+                            the transition to sustainable mobility in Africa.
                         </p>
                         <p className="text-gray-600 leading-relaxed">
-                            Our mission is to power safe, clean, and efficient movement for people and goods
-                            while offering dependable after-sales support including maintenance, warranties,
-                            and spare parts.
+                            Our mission is to power safe, clean, and efficient movement for
+                            people and goods while offering dependable after-sales support
+                            including maintenance, warranties, and spare parts.
                         </p>
                     </div>
 
@@ -66,30 +73,21 @@ const AboutAndProducts = () => {
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
                         {products.map((item, index) => (
-                            <div
+                            <Link
                                 key={index}
-                                // Increased padding from 'p-6' to 'p-8'
-                                className="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
+                                to={item.path}
+                                className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition block"
                             >
                                 <img
-                                    // Increased image size from 'w-20 h-20' to 'w-24 h-24'
                                     src={item.img}
                                     alt={item.title}
-                                    className="w-24 h-24 object-contain mx-auto mb-6"
+                                    className="w-full h-40 object-cover rounded-xl mb-6"
                                 />
-                                <h3
-                                    // Increased title size from 'text-xl' to 'text-2xl'
-                                    className="text-2xl font-semibold text-gray-800 mb-3"
-                                >
+                                <h3 className="text-2xl font-semibold text-gray-800 mb-3">
                                     {item.title}
                                 </h3>
-                                <p
-                                    // Increased description size from 'text-sm' to 'text-base'
-                                    className="text-gray-600 text-base"
-                                >
-                                    {item.desc}
-                                </p>
-                            </div>
+                                <p className="text-gray-600 text-base">{item.desc}</p>
+                            </Link>
                         ))}
                     </div>
                 </div>
