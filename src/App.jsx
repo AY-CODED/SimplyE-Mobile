@@ -10,6 +10,11 @@ import ElectricBike from "./pages/ElectricBike";
 import ElectricTricycle from "./pages/ElectricTricycle";
 import ElectricCar from "./pages/ElectricCar";
 import FleetSolutions from "./pages/FleetSolutions";
+import BydInfo from "./pages/BydInfo";
+import Seagull from "./pages/Seagull";
+import Songplus from "./pages/Songplus";
+import Seal from "./pages/Seal";
+import Tangl from "./pages/Tangl";
 
 const App = () => {
   return (
@@ -26,8 +31,11 @@ const App = () => {
           <Route path="/products/electric-tricycles" element={<ElectricTricycle />} />
           <Route path="/products/electric-cars" element={<ElectricCar />} />
           <Route path="/products/fleet-solutions" element={<FleetSolutions />} />
-
-
+          <Route path="/BydInfo" element={<BydInfo />} />
+          <Route path="/Seagull" element={<Seagull/>}/>
+          <Route path="/Songplus" element={<Songplus/>}/>
+          <Route path="/Seal" element={<Seal/>}/>
+          <Route path="/Tangl" element={<Tangl/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
