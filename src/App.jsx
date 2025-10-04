@@ -14,7 +14,7 @@ import Seagull from "./pages/Seagull";
 import Songplus from "./pages/Songplus";
 import Seal from "./pages/Seal";
 import Tangl from "./pages/Tangl";
-import LiOne from "./pages/LiOne"
+import LiOne from "./pages/LiOne";
 import Lil7 from "./pages/Lil7";
 import Lil8 from "./pages/Lil8";
 import Lil9 from "./pages/Lil9";
@@ -36,48 +36,65 @@ import Modely from "./pages/Modely";
 import Altom9 from "./pages/Altom9";
 import Altom7 from "./pages/Altom7";
 import Altom5 from "./pages/Altom5";
+import Semdf from "./pages/Semdf";
+import Sect from "./pages/Sect";
+import Sech from "./pages/Sech";
+import Sewx from "./pages/Sewx";
+import Semzt from "./pages/Semzt";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<PageLayout />}>
+          {/* Main Pages */}
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* Product Categories */}
           <Route path="/products/electric-bikes" element={<ElectricBike />} />
           <Route path="/products/electric-tricycles" element={<ElectricTricycle />} />
           <Route path="/products/electric-cars" element={<ElectricCar />} />
           <Route path="/products/fleet-solutions" element={<FleetSolutions />} />
+
+          {/* Car Pages */}
           <Route path="/BydInfo" element={<BydInfo />} />
-          <Route path="/Seagull" element={<Seagull/>}/>
-          <Route path="/Songplus" element={<Songplus/>}/>
-          <Route path="/Seal" element={<Seal/>}/>
-          <Route path="/Tangl" element={<Tangl/>}/>
-          <Route path="/LiOne" element={<LiOne/>}/>
-          <Route path="/Lil7" element={<Lil7/>} />
-          <Route path="/Lil8" element={<Lil8/>} />
-          <Route path="/Lil9" element={<Lil9/>} />
-          <Route path="/NioEc6" element={<NioEc6/>} />
-          <Route path="/NioEs6" element={<NioEs6/>} />
-          <Route path="/NioEs8" element={<NioEs8/>} />
-          <Route path="/GacAionY" element={<GacAionY/>}/>
-          <Route path="/Iynk08" element={<Iynk08/>}/>
-          <Route path="/Icar03" element={<Icar03/>} />
-          <Route path="/GeometryA" element={<GeometryA/>}/>
-          <Route path="/Galaxyl7" element={<Galaxyl7/>}/>
-          <Route path="/Aitom8" element={<Aitom8/>}/>
-          <Route path="/G6" element={<G6/>}/>
-          <Route path="/Bingo" element={<Bingo/>}/>
-          <Route path="/Zeekr009" element={<Zeekr009/>}/>
-          <Route path="/Zeekrc11" element={<Zeekrc11/>}/>
-          <Route path="/Zeekr10" element={<Zeekr10/>}/>
-          <Route path="/Modely" element={<Modely/>}/>
-          <Route path="/Altom9" element={<Altom9/>}/>
-          <Route path="/Altom7" element={<Altom7/>}/>
-          <Route path="/Altom5" element={<Altom5/>}/>
+          <Route path="/Seagull" element={<Seagull />} />
+          <Route path="/Songplus" element={<Songplus />} />
+          <Route path="/Seal" element={<Seal />} />
+          <Route path="/Tangl" element={<Tangl />} />
+          <Route path="/LiOne" element={<LiOne />} />
+          <Route path="/Lil7" element={<Lil7 />} />
+          <Route path="/Lil8" element={<Lil8 />} />
+          <Route path="/Lil9" element={<Lil9 />} />
+          <Route path="/NioEc6" element={<NioEc6 />} />
+          <Route path="/NioEs6" element={<NioEs6 />} />
+          <Route path="/NioEs8" element={<NioEs8 />} />
+          <Route path="/GacAionY" element={<GacAionY />} />
+          <Route path="/Iynk08" element={<Iynk08 />} />
+          <Route path="/Icar03" element={<Icar03 />} />
+          <Route path="/GeometryA" element={<GeometryA />} />
+          <Route path="/Galaxyl7" element={<Galaxyl7 />} />
+          <Route path="/Aitom8" element={<Aitom8 />} />
+          <Route path="/G6" element={<G6 />} />
+          <Route path="/Bingo" element={<Bingo />} />
+          <Route path="/Zeekr009" element={<Zeekr009 />} />
+          <Route path="/Zeekrc11" element={<Zeekrc11 />} />
+          <Route path="/Zeekr10" element={<Zeekr10 />} />
+          <Route path="/Modely" element={<Modely />} />
+          <Route path="/Altom9" element={<Altom9 />} />
+          <Route path="/Altom7" element={<Altom7 />} />
+          <Route path="/Altom5" element={<Altom5 />} />
+
+          {/* Electric Bike Detail Pages */}
+          <Route path="/Semdf" element={<Semdf />} />
+          <Route path="/Sect" element={<Sect />} />
+          <Route path="/Sech" element={<Sech />} />
+          <Route path="/Sewx" element={<Sewx />} />
+          <Route path="/Semzt" element={<Semzt />} />
         </Route>
       </Routes>
     </BrowserRouter>
