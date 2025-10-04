@@ -1,20 +1,23 @@
 import { Package, Leaf, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ElectricTricycle = () => {
   const tricycles = [
     {
       name: "SEM-E1 Electric Tricycle",
       desc: "Compact and efficient, perfect for urban deliveries.",
-      img: "/SEM-E1-Tricycle.webp",
+      img: "/M5.jpg",
       price: "₦2,345,000",
       icon: <Package className="w-6 h-6 text-blue-500" />,
+      path: "/tricycles/sem-e1",
     },
     {
       name: "SE-EK07 Electric Tricycle",
       desc: "Heavy-duty design built for carrying larger loads with ease.",
-      img: "/SE-EK07-Tricycle.jpg",
+      img: "/M2.jpg",
       price: "₦2,750,000",
       icon: <Users className="w-6 h-6 text-green-500" />,
+      path: "/tricycles/se-ek07",
     },
     {
       name: "SE-EK02 Electric Tricycle",
@@ -22,13 +25,15 @@ const ElectricTricycle = () => {
       img: "/SE-Cargo-Tricycle.webp",
       price: "₦3,050,000",
       icon: <Leaf className="w-6 h-6 text-emerald-500" />,
+      path: "/tricycles/se-ek02",
     },
     {
       name: "SE-EK03 Electric Tricycle",
       desc: "Spacious cargo hold for businesses and logistics needs.",
-      img: "/SE-Cargo-Tricycle.webp",
+      img: "/M4.jpg",
       price: "₦3,050,000",
       icon: <Leaf className="w-6 h-6 text-emerald-500" />,
+      path: "/tricycles/se-ek03",
     },
   ];
 
@@ -66,11 +71,17 @@ const ElectricTricycle = () => {
               {/* Description */}
               <p className="text-gray-600 flex-1">{trike.desc}</p>
 
-              {/* Price */}
-              <div className="mt-4">
+              {/* Price + Button beside each other */}
+              <div className="mt-4 flex items-center justify-between">
                 <span className="inline-block bg-blue-100 text-blue-600 font-semibold px-4 py-2 rounded-full text-sm">
                   {trike.price}
                 </span>
+
+                <Link to={trike.path}>
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm">
+                    View More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
