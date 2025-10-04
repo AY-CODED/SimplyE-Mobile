@@ -31,6 +31,11 @@ import G6 from "./pages/G6";
 import Bingo from "./pages/Bingo";
 import Zeekr009 from "./pages/Zeekr009";
 import Zeekrc11 from "./pages/Zeekrc11";
+import Zeekr10 from "./pages/Zeekr10";
+import Modely from "./pages/Modely";
+import Altom9 from "./pages/Altom9";
+import Altom7 from "./pages/Altom7";
+import Altom5 from "./pages/Altom5";
 
 const App = () => {
   return (
@@ -68,6 +73,11 @@ const App = () => {
           <Route path="/Bingo" element={<Bingo/>}/>
           <Route path="/Zeekr009" element={<Zeekr009/>}/>
           <Route path="/Zeekrc11" element={<Zeekrc11/>}/>
+          <Route path="/Zeekr10" element={<Zeekr10/>}/>
+          <Route path="/Modely" element={<Modely/>}/>
+          <Route path="/Altom9" element={<Altom9/>}/>
+          <Route path="/Altom7" element={<Altom7/>}/>
+          <Route path="/Altom5" element={<Altom5/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
