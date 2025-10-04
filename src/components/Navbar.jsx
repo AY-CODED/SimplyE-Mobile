@@ -26,9 +26,7 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -36,10 +34,10 @@ const Navbar = () => {
   const isLandingPage = location.pathname === "/";
 
   const LinkComponent = ({ link, children }) => {
-    const isHomePage = location.pathname === "/";
+    const isMobile = window.innerWidth < 768;
 
     if (link.path && link.path.startsWith("#")) {
-      if (isHomePage) {
+      if (isLandingPage) {
         return (
           <a
             href={link.path}
@@ -52,10 +50,13 @@ const Navbar = () => {
               }
               setIsOpen(false);
             }}
-            className={`transition ${isLandingPage && !scrolled
+            className={`transition ${
+              isMobile
+                ? "text-blue-600 hover:text-blue-700"
+                : isLandingPage && !scrolled
                 ? "text-white hover:text-blue-400"
                 : "text-blue-600 hover:text-blue-700"
-              }`}
+            }`}
           >
             {children}
           </a>
@@ -78,9 +79,12 @@ const Navbar = () => {
         to={link.path || "#"}
         onClick={() => setIsOpen(false)}
         className={({ isActive }) =>
-          `transition ${isActive
-            ? "text-blue-600 font-medium"
-            : isLandingPage && !scrolled
+          `transition ${
+            isActive
+              ? "text-blue-600 font-medium"
+              : isMobile
+              ? "text-blue-600 hover:text-blue-700"
+              : isLandingPage && !scrolled
               ? "text-white hover:text-blue-400"
               : "text-blue-600 hover:text-blue-700"
           }`
@@ -93,25 +97,27 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 transition ${isLandingPage
+      className={`w-full fixed top-0 left-0 z-50 transition ${
+        isLandingPage
           ? scrolled
             ? "bg-white shadow-md border border-gray-200"
             : "bg-transparent"
           : "bg-white shadow-md border border-gray-200"
-        }`}
+      }`}
     >
       <div className="flex justify-between items-center px-6 py-4">
-        {/* Left links */}
+        {/* Left Links */}
         <ul className="hidden md:flex gap-8 relative">
           {links.slice(0, 3).map((link, i) => (
             <li key={i} className="relative group">
               {link.dropdown ? (
                 <>
                   <span
-                    className={`flex items-center gap-1 cursor-pointer transition ${isLandingPage && !scrolled
+                    className={`flex items-center gap-1 cursor-pointer transition ${
+                      isLandingPage && !scrolled
                         ? "text-white hover:text-blue-400"
                         : "text-blue-600 hover:text-blue-700"
-                      }`}
+                    }`}
                   >
                     {link.text} <ChevronDown size={16} />
                   </span>
@@ -138,7 +144,7 @@ const Navbar = () => {
         {/* Logo */}
         <Logo size={1} />
 
-        {/* Right links */}
+        {/* Right Links */}
         <ul className="hidden md:flex gap-8 items-center">
           {links.slice(3).map((link, i) => (
             <li key={i}>
@@ -149,8 +155,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`md:hidden transition ${isLandingPage && !scrolled ? "text-white" : "text-blue-600"
-            }`}
+          className="md:hidden transition text-blue-600"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -178,7 +183,7 @@ const Navbar = () => {
                             <NavLink
                               to={item.path}
                               onClick={() => setIsOpen(false)}
-                              className="block text-gray-700 hover:text-blue-600"
+                              className="block text-blue-600 hover:text-blue-700"
                             >
                               {item.text}
                             </NavLink>
