@@ -1,64 +1,64 @@
-import { Car, Gauge, Battery, Disc, Shield, Sofa, Ruler, DollarSign, Cpu } from "lucide-react";
+import { Car, Gauge, Battery, Disc, Shield, Ruler, Cpu, DollarSign, Monitor } from "lucide-react";
 
-const Bingo = () => {
+const Zeekr009 = () => {
   return (
     <div className="p-8 lg:p-16 mt-20 bg-gray-50">
       <div className="grid lg:grid-cols-2 gap-10 items-start">
-        
+
         {/* Car Image */}
         <div className="flex justify-center">
           <img
-            src="/L8.jpeg"
-            alt="BINGO"
+            src="/Z009.webp"
+            alt="ZEEKR 009"
             className="rounded-2xl shadow-lg w-full max-w-lg object-cover"
           />
         </div>
 
-        {/* Car Details */}
+        {/* Details Section */}
         <div>
-          <h1 className="text-4xl font-bold text-blue-700">BINGO</h1>
+          <h1 className="text-4xl font-bold text-purple-600">ZEEKR 009</h1>
           <p className="mt-3 text-gray-600 text-lg">
-            Fun and compact EV for urban driving. Available in 203KM Base, 333KM Lingxi Connect, and 333KM Premium trims.
+            Luxury MPV EV with futuristic styling, cutting-edge safety, and a tech-forward interior experience.
           </p>
 
           <div className="mt-8 space-y-6">
 
             {/* Basic Info */}
             <div className="bg-white p-5 rounded-xl shadow flex gap-3">
-              <Car className="w-6 h-6 text-pink-500 mt-1" />
+              <Car className="w-6 h-6 text-purple-500 mt-1" />
               <div>
                 <h2 className="font-semibold text-gray-800">Basic Info</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Category: Base (203km) / Lingxi Connect (333km) / Premium (333km) <br />
-                  Warranty: 3yr/100,000 km (Base) | 8yr/120,000 km Battery (Higher trims) <br />
-                  Vehicle Type: Compact Urban EV
+                  Body: 5-door, 5-seat SUV <br />
+                  Trims: Base Model / Premium Model <br />
+                  Warranty: 4 yr / 120,000 km (vehicle), 8 yr / 150,000 km (battery)
                 </p>
               </div>
             </div>
 
             {/* Dimensions */}
             <div className="bg-white p-5 rounded-xl shadow flex gap-3">
-              <Ruler className="w-6 h-6 text-teal-500 mt-1" />
+              <Ruler className="w-6 h-6 text-green-600 mt-1" />
               <div>
                 <h2 className="font-semibold text-gray-800">Dimensions</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Length × Width × Height: 3650 × 1670 × 1540 mm <br />
-                  Wheelbase: 2560 mm <br />
-                  Curb Weight: 960–1000 kg (Base), 1125 kg (Higher trims)
+                  Length × Width × Height: 4750 × 1905 × 1675 mm <br />
+                  Wheelbase: 2930 mm
                 </p>
               </div>
             </div>
 
             {/* Powertrain */}
             <div className="bg-white p-5 rounded-xl shadow flex gap-3">
-              <Gauge className="w-6 h-6 text-green-600 mt-1" />
+              <Gauge className="w-6 h-6 text-orange-500 mt-1" />
               <div>
                 <h2 className="font-semibold text-gray-800">Powertrain</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Motor Type: Permanent Magnet (Front) <br />
-                  Max Power: 30 kW (41 PS, Base) | 50 kW (68 PS, Higher trims) <br />
-                  Max Torque: 110 Nm (Base) | 150 Nm (Higher trims) <br />
-                  Top Speed: 100 km/h (Base) | 120 km/h (Higher trims)
+                  Motor: Rear Permanent Magnet Synchronous Motor <br />
+                  Max Power: 230 kW (312 HP) <br />
+                  Max Torque: 360 Nm <br />
+                  0–100 km/h: 7.0 s (Base) | 7.9 s (Premium) <br />
+                  Drivetrain: RWD (Rear-Wheel Drive)
                 </p>
               </div>
             </div>
@@ -69,50 +69,49 @@ const Bingo = () => {
               <div>
                 <h2 className="font-semibold text-gray-800">Battery & Range</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Battery Type: LFP <br />
-                  Capacity: 17.3 kWh (203 km, Base) | 31.9 kWh (333 km, Higher trims) <br />
-                  Fast Charge (0–80%): Not supported (Base) | ~0.58h (Higher trims) <br />
-                  Slow Charge: 5.5h (Base) | 9.5h (Higher trims)
+                  Base Model: 75.6 kWh LFP Battery – 510 km CLTC Range <br />
+                  Premium Model: 80 kWh NCM Battery – 605 km CLTC Range <br />
+                  Fast Charge (30–80%): ~30 min <br />
+                  Slow Charge: 6.5 h (Base) | 7.5 h (Premium)
                 </p>
               </div>
             </div>
 
-            {/* Chassis */}
+            {/* Chassis & Brakes */}
             <div className="bg-white p-5 rounded-xl shadow flex gap-3">
-              <Cpu className="w-6 h-6 text-purple-600 mt-1" />
+              <Cpu className="w-6 h-6 text-blue-600 mt-1" />
               <div>
-                <h2 className="font-semibold text-gray-800">Chassis</h2>
+                <h2 className="font-semibold text-gray-800">Chassis & Brakes</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Front Suspension: MacPherson Strut <br />
-                  Rear Suspension: Torsion Beam <br />
-                  Rear Brakes: Drum (Base) | Disc (Higher trims) <br />
-                  Parking Brake: Handbrake (Base) | Electronic (Higher trims)
+                  Front Suspension: Double Wishbone <br />
+                  Rear Suspension: Multi-link <br />
+                  Brakes: Ventilated Discs (Front & Rear) <br />
+                  Tyres: 235/60 R18
+                </p>
+              </div>
+            </div>
+
+            {/* Smart Cabin */}
+            <div className="bg-white p-5 rounded-xl shadow flex gap-3">
+              <Monitor className="w-6 h-6 text-pink-500 mt-1" />
+              <div>
+                <h2 className="font-semibold text-gray-800">Smart Cabin</h2>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Triple Display: 10.25” Instrument + 12.8” Center + 10.25” Co-driver <br />
+                  Driving Assist: Leapmotor Pilot 3.0 (L2) <br />
+                  Sensors: 28 units (Cameras + Radars)
                 </p>
               </div>
             </div>
 
             {/* Safety */}
             <div className="bg-white p-5 rounded-xl shadow flex gap-3">
-              <Shield className="w-6 h-6 text-indigo-500 mt-1" />
+              <Shield className="w-6 h-6 text-red-500 mt-1" />
               <div>
-                <h2 className="font-semibold text-gray-800">Safety</h2>
+                <h2 className="font-semibold text-gray-800">Safety & Driver Assist</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Airbags: Driver + Passenger (Base) <br />
-                  Higher trims add: TPMS, Cruise Control, Rear Camera
-                </p>
-              </div>
-            </div>
-
-            {/* Interior & Infotainment */}
-            <div className="bg-white p-5 rounded-xl shadow flex gap-3">
-              <Sofa className="w-6 h-6 text-orange-500 mt-1" />
-              <div>
-                <h2 className="font-semibold text-gray-800">Interior & Infotainment</h2>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Base: No Infotainment Screen <br />
-                  Lingxi Connect: 10.25" LCD Screen <br />
-                  Premium: 7" LCD Screen <br />
-                  Tyres: 185/60 R15 (All Trims)
+                  Active Safety: Lane Keeping, AEB, Full-speed ACC <br />
+                  28 total sensors for enhanced driving awareness
                 </p>
               </div>
             </div>
@@ -123,8 +122,8 @@ const Bingo = () => {
               <div>
                 <h2 className="font-semibold text-gray-800">Price</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  New: <span className="font-bold">$23,875</span> <br />
-                  Second-hand: <span className="font-bold">$18,662</span>
+                  New: <span className="font-bold">$99,463</span> <br />
+                  Second-hand: <span className="font-bold">$82,051</span>
                 </p>
               </div>
             </div>
@@ -136,4 +135,4 @@ const Bingo = () => {
   );
 };
 
-export default Bingo;
+export default Zeekr009;

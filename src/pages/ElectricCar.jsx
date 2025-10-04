@@ -49,7 +49,7 @@ const ElectricCar = () => {
       img: "/Li.jpeg",
       price: "$41,877",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/li-one",
+      path: "/LiOne",
     },
     {
       name: "Li L7",
@@ -57,7 +57,7 @@ const ElectricCar = () => {
       img: "/L7.jpeg",
       price: "$68,919",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/li-l7",
+      path: "/Lil7",
     },
     {
       name: "Li L8",
@@ -65,7 +65,7 @@ const ElectricCar = () => {
       img: "/L8.jpeg",
       price: "$74,132",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/li-l8",
+      path: "/Lil8",
     },
     {
       name: "Li L9",
@@ -73,7 +73,7 @@ const ElectricCar = () => {
       img: "/L9.jpeg",
       price: "$91,800",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/li-l9",
+      path: "/Lil9",
     },
     {
       name: "NIO EC6",
@@ -81,7 +81,7 @@ const ElectricCar = () => {
       img: "/Nio.jpeg",
       price: "$85,700",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/nio-ec6",
+      path: "/NioEc6",
     },
     {
       name: "NIO ES6",
@@ -89,7 +89,7 @@ const ElectricCar = () => {
       img: "/ES6.jpeg",
       price: "$80,816",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/nio-es6",
+      path: "/NioEs6",
     },
     {
       name: "NIO ES8",
@@ -97,7 +97,7 @@ const ElectricCar = () => {
       img: "/ES8.jpg",
       price: "$106,288",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/nio-es8",
+      path: "/NioEs8",
     },
     {
       name: "GAC AION Y",
@@ -105,7 +105,7 @@ const ElectricCar = () => {
       img: "/GAC.jpeg",
       price: "$38,413",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/gac-aion-y",
+      path: "/GacAionY",
     },
     {
       name: "IYNK & CO 08",
@@ -113,7 +113,7 @@ const ElectricCar = () => {
       img: "/L8.jpeg",
       price: "$48,950",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/iynk-08",
+      path: "/Iynk08",
     },
     {
       name: "ICAR03",
@@ -121,7 +121,7 @@ const ElectricCar = () => {
       img: "/ICAR.jpeg",
       price: "$52,418",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/icar03",
+      path: "/Icar03",
     },
     {
       name: "Geometry A",
@@ -129,7 +129,7 @@ const ElectricCar = () => {
       img: "/GA.jpeg",
       price: "$21,960",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/geometry-a",
+      path: "/GeometryA",
     },
     {
       name: "Galaxy L7",
@@ -137,7 +137,7 @@ const ElectricCar = () => {
       img: "/GL7.jpeg",
       price: "$42,594",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/galaxy-l7",
+      path: "/Galaxyl7",
     },
     {
       name: "AITO M8",
@@ -145,7 +145,7 @@ const ElectricCar = () => {
       img: "/AltoM8.jpeg",
       price: "$90,863",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/aito-m8",
+      path: "/Aitom8",
     },
     {
       name: "G6",
@@ -153,7 +153,7 @@ const ElectricCar = () => {
       img: "/G6.jpeg",
       price: "$52,418",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/g6",
+      path: "/G6",
     },
     {
       name: "BINGO",
@@ -161,7 +161,7 @@ const ElectricCar = () => {
       img: "/L8.jpeg",
       price: "$23,875",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/bingo",
+      path: "/Bingo",
     },
     {
       name: "ZEEKR 009",
@@ -169,7 +169,7 @@ const ElectricCar = () => {
       img: "/Z009.webp",
       price: "$99,463",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/zeekr-009",
+      path: "/Zeekr009",
     },
     {
       name: "ZEEKR C11",
@@ -177,7 +177,7 @@ const ElectricCar = () => {
       img: "/ZEROC11.jpeg",
       price: "$40,163",
       icon: <BatteryCharging className="w-6 h-6 text-green-500" />,
-      path: "/cars/zeekr-c11",
+      path: "/Zeekrc11",
     },
     {
       name: "ZEEKR 10",
