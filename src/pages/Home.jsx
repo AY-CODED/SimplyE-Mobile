@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  // Smooth scroll handler
+  const scrollToAbout = (e) => {
+    e.preventDefault();
+    const aboutSection = document.getElementById("About");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className="relative h-screen flex flex-col bg-cover bg-center sm:bg-top lg:bg-center"
@@ -21,7 +30,8 @@ const Home = () => {
         {/* CTA Button */}
         <div className="mt-6">
           <Link
-            to="/products"
+            to="#About"
+            onClick={scrollToAbout}
             className="px-6 py-3 sm:px-8 sm:py-4 bg-blue-600 text-white text-base sm:text-lg font-medium rounded-xl shadow-md hover:bg-blue-700 transition"
           >
             Explore Fleet
