@@ -9,7 +9,7 @@ const ElectricTricycle = () => {
       img: "/M5.jpg",
       price: "₦2,345,000",
       icon: <Package className="w-6 h-6 text-blue-500" />,
-      path: "/tricycles/sem-e1",
+      path: "/Seme1",
     },
     {
       name: "SE-EK07 Electric Tricycle",
@@ -17,7 +17,7 @@ const ElectricTricycle = () => {
       img: "/M2.jpg",
       price: "₦2,750,000",
       icon: <Users className="w-6 h-6 text-green-500" />,
-      path: "/tricycles/se-ek07",
+      path: "/Seek07",
     },
     {
       name: "SE-EK02 Electric Tricycle",
@@ -25,7 +25,7 @@ const ElectricTricycle = () => {
       img: "/SE-Cargo-Tricycle.webp",
       price: "₦3,050,000",
       icon: <Leaf className="w-6 h-6 text-emerald-500" />,
-      path: "/tricycles/se-ek02",
+      path: "/Seek02",
     },
     {
       name: "SE-EK03 Electric Tricycle",
@@ -33,7 +33,7 @@ const ElectricTricycle = () => {
       img: "/M4.jpg",
       price: "₦3,050,000",
       icon: <Leaf className="w-6 h-6 text-emerald-500" />,
-      path: "/tricycles/se-ek03",
+      path: "/Seek03",
     },
   ];
 

@@ -41,6 +41,10 @@ import Sect from "./pages/Sect";
 import Sech from "./pages/Sech";
 import Sewx from "./pages/Sewx";
 import Semzt from "./pages/Semzt";
+import Seme1 from "./pages/Seme1";
+import Seek07 from "./pages/Seek07";
+import Seek02 from "./pages/Seek02";
+import Seek03 from "./pages/Seek03";
 
 const App = () => {
   return (
@@ -95,6 +99,12 @@ const App = () => {
           <Route path="/Sech" element={<Sech />} />
           <Route path="/Sewx" element={<Sewx />} />
           <Route path="/Semzt" element={<Semzt />} />
+
+          {/* Electric Tricycle Detail Page */}
+          <Route path="/Seme1" element={<Seme1/>}/>
+          <Route path="/Seek07" element={<Seek07/>}/>
+          <Route path="/Seek02" element={<Seek02/>}/>
+          <Route path="/Seek03" element={<Seek03/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
