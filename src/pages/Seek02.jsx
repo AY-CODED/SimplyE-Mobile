@@ -7,7 +7,7 @@ const Seek02 = () => {
         {/* Image Section */}
         <div className="w-full h-80 bg-gray-100 flex justify-center items-center">
           <img
-            src="/SE-Cargo-Tricycle.webp"
+            src="/M6.jpg"
             alt="SE-EK02 Electric Tricycle"
             className="h-full object-contain"
           />

@@ -22,7 +22,7 @@ const ElectricTricycle = () => {
     {
       name: "SE-EK02 Electric Tricycle",
       desc: "Spacious cargo hold for businesses and logistics needs.",
-      img: "/SE-Cargo-Tricycle.webp",
+      img: "/M6.jpg",
       price: "₦3,050,000",
       icon: <Leaf className="w-6 h-6 text-emerald-500" />,
       path: "/Seek02",
