@@ -1,6 +1,11 @@
 import { Package, Bike, Bus, Home } from 'lucide-react';
+import { useEffect } from 'react';
 
 const UseCases = () => {
+      useEffect(() => {
+        window.scrollTo({ top: 0 });
+      }, []);
+    
     const cases = [
         {
             icon: Package,

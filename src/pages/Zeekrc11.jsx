@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Car,
   Gauge,
@@ -11,7 +11,12 @@ import {
   Monitor,
 } from "lucide-react";
 
+
 const Zeekrc11 = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0 });
+    }, []);
+  
   return (
     <div className="p-8 lg:p-16 mt-20 bg-gray-50">
       <div className="grid lg:grid-cols-2 gap-10 items-start">

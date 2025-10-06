@@ -12,8 +12,13 @@ import {
   Wind,
   Fuel,
 } from "lucide-react";
+import { useEffect } from "react";
 
 const Altom7 = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0 });
+    }, []);
+  
   return (
     <div className="p-8 lg:p-16 mt-20 bg-gray-50">
       <div className="grid lg:grid-cols-2 gap-10 items-start">

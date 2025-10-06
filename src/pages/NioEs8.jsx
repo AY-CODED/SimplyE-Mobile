@@ -1,6 +1,11 @@
 import { Battery, Gauge, Car, Zap, Shield, Cpu, Ruler, DollarSign, Disc, Monitor } from "lucide-react";
+import { useEffect } from "react";
 
 const NioEs8 = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0 });
+    }, []);
+  
   return (
     <div className="p-10 lg:p-30 bg-gray-50">
       <div className="grid lg:grid-cols-2 gap-12 items-start">
