@@ -11,11 +11,11 @@ const AboutUs = () => {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl font-extrabold text-center text-blue-700 mb-10"
                 >
-                    About Our Company
+                    Our Vision & Mission
                 </motion.h1>
 
                 {/* Company Overview */}
-                <motion.p
+                {/* <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
@@ -28,7 +28,8 @@ const AboutUs = () => {
                     logistics applications, and after-sales support (servicing, warranties,
                     spare parts) to help businesses and communities switch to low-cost,
                     low-emission transport.
-                </motion.p>
+                </motion.p> */}
+
 
                 {/* Vision & Mission Section */}
                 <div className="grid md:grid-cols-2 gap-10 mt-12">
@@ -49,7 +50,6 @@ const AboutUs = () => {
                             for people and goods.
                         </p>
                     </motion.div>
-
                     {/* Mission */}
                     <motion.div
                         whileHover={{ scale: 1.05 }}
