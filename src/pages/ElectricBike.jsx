@@ -1,7 +1,12 @@
 import { Zap, Package, Battery, Bike } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 
 const ElectricBike = () => {
+    useEffect(()=> {
+      window.scrollTo({top: 0})
+    }, [])
   const bikes = [
     {
       name: "SEM-DF Electric Bike",

@@ -1,7 +1,11 @@
 import { Car, BatteryCharging, Zap } from "lucide-react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const ElectricCar = () => {
+  useEffect(()=> {
+    window.scrollTo({top: 0})
+  }, [])
   const cars = [
     {
       name: "BYD Qin L 2024 DM-i120km",

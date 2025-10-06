@@ -1,6 +1,11 @@
 import { Mail, Phone, MapPin, Link, Users } from 'lucide-react';
+import { useEffect } from "react";
+
 
 const Contact = () => {
+     useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
     return (
         // The pt-40 ensures content starts well below the fixed Navbar
         <div className="pt-40 pb-20 bg-gray-50 min-h-screen">

@@ -1,7 +1,12 @@
 import { Package, Leaf, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 
 const ElectricTricycle = () => {
+    useEffect(()=> {
+      window.scrollTo({top: 0})
+    }, [])
   const tricycles = [
     {
       name: "SEM-E1 Electric Tricycle",
