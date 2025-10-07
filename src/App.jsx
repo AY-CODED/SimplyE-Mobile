@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageLayout from "./layout/PageLayout";
 import About from "./pages/AboutAndProducts";
-import Services from "./pages/Services";
-import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Landing from "./pages/LandingPage";
 import ElectricBike from "./pages/ElectricBike";
@@ -54,8 +52,6 @@ const App = () => {
           {/* Main Pages */}
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
 
           {/* Product Categories */}
