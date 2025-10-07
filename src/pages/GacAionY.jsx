@@ -6,7 +6,7 @@ const GacAionY = () => {
   }, []);
 
   return (
-    <div className="p-10 lg:p-30 bg-gray-50">
+    <div className="p-10 lg:p-30 bg-gray-50 mt 20">
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         
         {/* Car Image */}
