@@ -57,12 +57,12 @@ const Contact = () => {
                             <div>
                                 <h3 className="text-lg font-semibold">Sales Enquiry / Proposals</h3>
                                 <a
-                                    href="https://simplysolar.ng/simply-e-mobile"
+                                    href="https://simplysolar.ng/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-200 underline hover:text-white transition"
                                 >
-                                    simplysolar.ng/simply-e-mobile
+                                    simplysolar.ng
                                 </a>
                             </div>
                         </div>

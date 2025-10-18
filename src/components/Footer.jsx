@@ -66,18 +66,18 @@ const Footer = () => {
                         <li className="flex items-center gap-2">
                             <LinkIcon size={16} />
                             <a
-                                href="https://simplysolar.ng/simply-e-mobile"
+                                href="https://simplysolar.ng"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-blue-950"
                             >
-                                simplysolar.ng/simply-e-mobile
+                                simplysolar.ng
                             </a>
                         </li>
-                        <li className="flex items-center gap-2">
+                        {/* <li className="flex items-center gap-2">
                             <Users size={16} />
                             <span>@simply_emobiles</span>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
