@@ -1,12 +1,44 @@
-import { Mail, Phone, MapPin, Link, Users, Instagram, Facebook } from "lucide-react";
-import { useEffect } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Link,
+  Users,
+  Instagram,
+  Facebook,
+} from "lucide-react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
+
+  const handleSubmitForm = async function (e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    setIsSubmitting(true);
+    try {
+      const res = await fetch(e.target.action, {
+        method: e.target.method,
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (!res.ok)
+        throw new Error("An error occured while submitting the form");
+
+      console.log("Form Successfully submitted");
+      e.target.reset()
+    } catch (err) {
+      console.log("An error occured");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="pt-40 pb-20 bg-gray-50 min-h-screen">
@@ -17,7 +49,8 @@ const Contact = () => {
             Get in Touch with Simply E-Mobiles
           </h1>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            We are ready to discuss your personal or fleet mobility needs. Reach out to our team today!
+            We are ready to discuss your personal or fleet mobility needs. Reach
+            out to our team today!
           </p>
         </div>
 
@@ -45,7 +78,9 @@ const Contact = () => {
               <Mail className="flex-shrink-0 h-6 w-6" />
               <div>
                 <h3 className="text-lg font-semibold">Email Us</h3>
-                <p className="text-blue-200 text-[14px]">simplyemobilesng@gmail.com</p>
+                <p className="text-blue-200 text-[14px]">
+                  simplyemobilesng@gmail.com
+                </p>
               </div>
             </div>
 
@@ -53,7 +88,9 @@ const Contact = () => {
             <div className="flex items-start space-x-3">
               <Link className="flex-shrink-0 h-6 w-6" />
               <div>
-                <h3 className="text-lg font-semibold">Sales Enquiry / Proposals</h3>
+                <h3 className="text-lg font-semibold">
+                  Sales Enquiry / Proposals
+                </h3>
                 <a
                   href="https://simplysolar.ng/"
                   target="_blank"
@@ -71,7 +108,6 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-semibold">Connect with Us</h3>
                 <div className="flex flex-col gap-2 mt-2">
-
                   {/* Facebook */}
                   <div className="flex items-center gap-3">
                     <Facebook className="text-white" />
@@ -87,7 +123,10 @@ const Contact = () => {
 
                   {/* TikTok */}
                   <div className="flex items-center gap-3">
-                    <FontAwesomeIcon icon={faTiktok} className="text-pink-400 text-xl" />
+                    <FontAwesomeIcon
+                      icon={faTiktok}
+                      className="text-pink-400 text-xl"
+                    />
                     <a
                       href="https://www.tiktok.com/@simplyemobilesng?_t=ZS-90eMDixqN7q&_r=1"
                       target="_blank"
@@ -128,46 +167,68 @@ const Contact = () => {
 
           {/* Right Column: Contact Form */}
           <div className="lg:col-span-2 p-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-            <form className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Send Us a Message
+            </h2>
+            {/* FORM */}
+            <form
+              className="space-y-6"
+              action="https://formspree.io/f/xzzjwlop"
+              method="POST"
+              onSubmit={handleSubmitForm}
+            >
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Full Name
                 </label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email Address
                 </label>
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Your Inquiry
                 </label>
                 <textarea
                   id="message"
                   rows="4"
+                  name="message"
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition"
+                className={`w-full px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition ${
+                  isSubmitting && "opacity-50"
+                }`}
               >
-                Submit Inquiry
+                {isSubmitting ? "Loading..." : "Submit Inquiry"}
               </button>
             </form>
           </div>
