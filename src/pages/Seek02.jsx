@@ -31,7 +31,7 @@ const Seek02 = () => {
           {/* Specifications */}
           <div className="grid md:grid-cols-2 gap-6 text-gray-800">
             <SpecCard title="⚡ Top Speed" value="50 km/h" />
-            <SpecCard title="💰 Price" value="₦9,600,000" />
+            <SpecCard title="💰 Price" value="₦3,050,000" />
             <SpecCard title="🔋 IDC Range" value="150 km" />
             <SpecCard title="⏱ Charging Time" value="4 hours" />
             <SpecCard
