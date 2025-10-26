@@ -30,7 +30,7 @@ const Seme1 = () => {
           {/* Specifications */}
           <div className="grid md:grid-cols-2 gap-6 text-gray-800">
             <SpecCard title="⚡ Top Speed" value="45–55 km/h" />
-            <SpecCard title="💰 Price" value="₦2,345,000" />
+            <SpecCard title="💰 Price" value="₦5,721,596" />
             <SpecCard title="🔋 IDC Range" value="100 km" />
             <SpecCard title="⏱ Charging Time" value="5 hours" />
             <SpecCard
