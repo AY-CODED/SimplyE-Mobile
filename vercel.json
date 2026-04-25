@@ -1,3 +1,8 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!sitemap.xml|robots.txt|Logo.png|BYD_HAN.jpg|modal.jpeg|assets/).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
