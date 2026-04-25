@@ -1,15 +1,15 @@
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom"; // Changed from "react-router"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const PageLayout = () => {
-    return(
+    return (
         <>
-            <Navbar/>
-            <Outlet/>
-            <Footer/>
+            <Navbar />
+            <Outlet />
+            <Footer />
         </>
     );
-}
+};
 
 export default PageLayout;
