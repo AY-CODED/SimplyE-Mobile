@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
@@ -10,6 +11,16 @@ const Home = () => {
     setShowModal(true);
   }, []);
 
+=======
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+const Home = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0 });
+    }, []);
+  
+  // Smooth scroll handler
+>>>>>>> 023b53cd7e46af7aa39d5ebc3f293169443e7392
   const scrollToAbout = (e) => {
     e.preventDefault();
     const aboutSection = document.getElementById("About");
@@ -21,10 +32,19 @@ const Home = () => {
   return (
     <div
       className="relative h-screen flex flex-col bg-cover bg-center sm:bg-top lg:bg-center"
+<<<<<<< HEAD
       style={{ backgroundImage: "url('/BYD_HAN.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
 
+=======
+      style={{ backgroundImage: "url('/BYD_HAN.jpg')" }} // replace with your image path
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Hero Content */}
+>>>>>>> 023b53cd7e46af7aa39d5ebc3f293169443e7392
       <div className="relative flex flex-1 flex-col items-center justify-center text-center text-white px-4 sm:px-6 md:px-10">
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-snug sm:leading-tight">
           Welcome to Simply-Emobile
@@ -33,6 +53,10 @@ const Home = () => {
           Get an electric vehicle that suits your lifestyle.
         </p>
 
+<<<<<<< HEAD
+=======
+        {/* CTA Button */}
+>>>>>>> 023b53cd7e46af7aa39d5ebc3f293169443e7392
         <div className="mt-6">
           <Link
             to="#About"
@@ -43,6 +67,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+<<<<<<< HEAD
 
       {/* Image Modal */}
       {showModal && (
@@ -66,8 +91,14 @@ const Home = () => {
           </div>
         </div>
       )}
+=======
+>>>>>>> 023b53cd7e46af7aa39d5ebc3f293169443e7392
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default Home;
+=======
+export default Home;
+>>>>>>> 023b53cd7e46af7aa39d5ebc3f293169443e7392
