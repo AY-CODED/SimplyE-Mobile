@@ -1,5 +1,5 @@
 {
-  "cleanUrls": true,
+  "version": 2,
   "rewrites": [
     {
       "source": "/sitemap.xml",
@@ -10,7 +10,7 @@
       "destination": "/robots.txt"
     },
     {
-      "source": "/((?!api|assets|.*\\..*).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
